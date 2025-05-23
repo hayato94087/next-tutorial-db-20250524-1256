@@ -7,7 +7,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && pnpm eslint . --ext .js,.jsx,.ts,.tsx,.mjs",
+    "lint": "next lint && pnpm eslint . --ext .js,.jsx,.ts,.tsx,.mjs && prisma validate",
     "lint:fix": "next lint --fix &&  pnpm eslint . --ext .js,.jsx,.ts,.tsx,.mjs --fix",
     "format": "prettier --check \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc,yml,yaml}\" --cache",
     "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc,yml,yaml}\" --cache && prisma format",
