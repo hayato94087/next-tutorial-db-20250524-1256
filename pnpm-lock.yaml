@@ -25,6 +25,9 @@ importers:
       zod:
         specifier: ^3.24.3
         version: 3.24.3
+      zod-prisma-types:
+        specifier: ^3.2.4
+        version: 3.2.4(@prisma/client@6.5.0(prisma@6.5.0(typescript@5.8.3))(typescript@5.8.3))(prisma@6.5.0(typescript@5.8.3))
     devDependencies:
       "@eslint/eslintrc":
         specifier: ^3
@@ -885,6 +888,18 @@ packages:
         integrity: sha512-fc/nusYBlJMzDmDepdUtH9aBsJrda2JNErP9AzuHbgUEQY0/9zQYZdNlXmKoIWENtio+qarPNe/+DQtrX5kMcQ==,
       }
 
+  "@prisma/debug@6.8.2":
+    resolution:
+      {
+        integrity: sha512-4muBSSUwJJ9BYth5N8tqts8JtiLT8QI/RSAzEogwEfpbYGFo9mYsInsVo8dqXdPO2+Rm5OG5q0qWDDE3nyUbVg==,
+      }
+
+  "@prisma/dmmf@6.8.2":
+    resolution:
+      {
+        integrity: sha512-okGJF/7hQZam/2wt+Y0hPyNxyY5S+L0FzAgtL932Q3YxUWHusRllrN39bCV45oF3QWY992g7rTWYdL2Rynt1qg==,
+      }
+
   "@prisma/engines-version@6.5.0-73.173f8d54f8d52e692c7e27e72a88314ec7aeff60":
     resolution:
       {
@@ -901,6 +916,18 @@ packages:
     resolution:
       {
         integrity: sha512-3LhYA+FXP6pqY8FLHCjewyE8pGXXJ7BxZw2rhPq+CZAhvflVzq4K8Qly3OrmOkn6wGlz79nyLQdknyCG2HBTuA==,
+      }
+
+  "@prisma/generator-helper@6.8.2":
+    resolution:
+      {
+        integrity: sha512-KBLW47sbwFBKKYMiICIAEWsG6TdpPapPT7e7hpmpF3xMgYAm6YIXu4JGwfQVDY9Vbcb+0vPdPdSEQtInYOOe5g==,
+      }
+
+  "@prisma/generator@6.8.2":
+    resolution:
+      {
+        integrity: sha512-yExkvgqiKg1WHzjYttz40g5DsOtud8RhapM0Mum6pw+wrDoQyhSAxs5NHyFCV+9VPvRd2v+jAP2CTT07bsibjw==,
       }
 
   "@prisma/get-platform@6.5.0":
@@ -1650,6 +1677,12 @@ packages:
     resolution:
       {
         integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==,
+      }
+
+  code-block-writer@12.0.0:
+    resolution:
+      {
+        integrity: sha512-q4dMFMlXtKR3XNBHyMHt/3pwYNA69EDk00lloMOaaUMKPUXBw6lpXtbu3MMVG6/uOihGnRDOlkyqsONEUj60+w==,
       }
 
   color-convert@2.0.1:
@@ -2935,6 +2968,12 @@ packages:
         integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==,
       }
 
+  lodash@4.17.21:
+    resolution:
+      {
+        integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==,
+      }
+
   log-update@6.1.0:
     resolution:
       {
@@ -3998,6 +4037,16 @@ packages:
       }
     engines: { node: ">=10" }
 
+  zod-prisma-types@3.2.4:
+    resolution:
+      {
+        integrity: sha512-S4spVBMJAmecLv+aLyRhXK26qW9nWwcsOf1H1fRcEmiI8DPbftZ99u0fhqHlymuTpmMcUpuKxcNNOIqNY0ScSQ==,
+      }
+    hasBin: true
+    peerDependencies:
+      "@prisma/client": ^4.x.x || ^5.x.x || ^6.x.x
+      prisma: ^4.x.x || ^5.x.x || ^6.x.x
+
   zod@3.24.3:
     resolution:
       {
@@ -4377,6 +4426,10 @@ snapshots:
 
   "@prisma/debug@6.5.0": {}
 
+  "@prisma/debug@6.8.2": {}
+
+  "@prisma/dmmf@6.8.2": {}
+
   "@prisma/engines-version@6.5.0-73.173f8d54f8d52e692c7e27e72a88314ec7aeff60":
     {}
 
@@ -4392,6 +4445,14 @@ snapshots:
       "@prisma/debug": 6.5.0
       "@prisma/engines-version": 6.5.0-73.173f8d54f8d52e692c7e27e72a88314ec7aeff60
       "@prisma/get-platform": 6.5.0
+
+  "@prisma/generator-helper@6.8.2":
+    dependencies:
+      "@prisma/debug": 6.8.2
+      "@prisma/dmmf": 6.8.2
+      "@prisma/generator": 6.8.2
+
+  "@prisma/generator@6.8.2": {}
 
   "@prisma/get-platform@6.5.0":
     dependencies:
@@ -4834,6 +4895,8 @@ snapshots:
       string-width: 7.2.0
 
   client-only@0.0.1: {}
+
+  code-block-writer@12.0.0: {}
 
   color-convert@2.0.1:
     dependencies:
@@ -5763,6 +5826,8 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
+  lodash@4.17.21: {}
+
   log-update@6.1.0:
     dependencies:
       ansi-escapes: 7.0.0
@@ -6453,5 +6518,14 @@ snapshots:
   yaml@2.7.1: {}
 
   yocto-queue@0.1.0: {}
+
+  zod-prisma-types@3.2.4(@prisma/client@6.5.0(prisma@6.5.0(typescript@5.8.3))(typescript@5.8.3))(prisma@6.5.0(typescript@5.8.3)):
+    dependencies:
+      "@prisma/client": 6.5.0(prisma@6.5.0(typescript@5.8.3))(typescript@5.8.3)
+      "@prisma/generator-helper": 6.8.2
+      code-block-writer: 12.0.0
+      lodash: 4.17.21
+      prisma: 6.5.0(typescript@5.8.3)
+      zod: 3.24.3
 
   zod@3.24.3: {}
