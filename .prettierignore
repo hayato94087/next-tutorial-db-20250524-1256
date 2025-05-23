@@ -1,2 +1,2 @@
 # Ignore Prisma generated files
-prisma/generated/zod
+prisma/generated
