@@ -8,7 +8,7 @@ import {
   getUsers as dalGetUsers,
 } from "@/server/dal/user";
 import { Role } from "@prisma/client";
-import UserSchema from "@/schemas/user.schema";
+import { UserSchema } from "@/server/db/prisma/generated/zod/modelSchema/UserSchema";
 
 // ユーザー作成用の型
 export interface CreateUserData {
