@@ -9,6 +9,13 @@ generator client {
   binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
+generator zod {
+  provider          = "zod-prisma-types"
+  useMultipleFiles  = true
+  writeBarrelFiles  = false
+  useTypeAssertions = true
+}
+
 datasource db {
   provider  = "postgresql"
   url       = env("DATABASE_URL")
