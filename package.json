@@ -13,6 +13,7 @@
     "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc,yml,yaml}\" --cache && prisma format",
     "typecheck": "tsc --skipLibCheck true --noEmit",
     "typecheck:full": "tsc --skipLibCheck false --noEmit",
+    "db:migrate:dev": "prisma migrate dev",
     "clean": "git clean -xdf node_modules dist .next",
     "prepare": "husky"
   },
